@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* shared style */
+.text-gray {
+  color: rgb(137, 135, 161);
+}
+.flex {
+  display: flex;
+}
+.bg-light {
+  background: rgb(245, 248, 255);
+}
+/* Navbar Style */
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-link {
+  text-decoration: none;
+}
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.home {
+  font-weight: 700;
+}
+/* Banner Related Style */
+.banner-content {
+  align-items: center;
+}
+.banner-text {
+  max-width: 570px;
+}
+.banner-title{
+  font-size: 65px;
+}
+.fresh-flowers{
+  color: rgb(233, 90, 8);
+}
+.banner-description{
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+  width: 570px;
+}
+.banner-gap{
+  gap:300px ;
+}
+.banner-img{
+  max-width: 570px;
+}
+.banner{
+  margin-top: 200px;
+}
