@@ -35,9 +35,9 @@
   text-align: center;
 }
 /* Navbar Style */
-nav img {
+/* nav img {
   width: 135px;
-}
+} */
 .nav-item {
   list-style: none;
   margin-right: 30px;
@@ -93,7 +93,7 @@ nav img {
 .plants-text {
   text-align: center;
   margin-top: 200px;
-  gap: px;
+  
 }
 .our-plants {
   font-size: 50px;
@@ -115,10 +115,11 @@ nav img {
   border: none;
   padding: 26px 50px;
   width: 270px;
+  cursor: pointer;
 }
 .flower-card {
   width: 270px;
-  height: 322.94px;
+  /* height: 322.94px; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
@@ -130,3 +131,45 @@ nav img {
   align-items: center;
   
 }
+/* start lover section */
+.lover-container{
+  
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 50px;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+/* start join massage section */
+.join-message{
+  color: rgb(255, 255, 255);
+  margin-left: 40px;
+  margin-bottom: 20px
+}
+.email{
+  max-width: 1440px;
+  max-height: 50px;
+  border: none;
+  padding: 20px 200px ;
+  
+}
+.join-btn{
+  max-width: 186px;
+  padding: 20px 25px 20px 30px;
+  cursor: pointer;
+  
+}
+.join-section{
+  background-image: url("../assets/news-letter-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 533px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
