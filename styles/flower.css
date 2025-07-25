@@ -35,9 +35,7 @@
   text-align: center;
 }
 /* Navbar Style */
-/* nav img {
-  width: 135px;
-} */
+
 .nav-item {
   list-style: none;
   margin-right: 30px;
@@ -93,7 +91,6 @@
 .plants-text {
   text-align: center;
   margin-top: 200px;
-  
 }
 .our-plants {
   font-size: 50px;
@@ -129,11 +126,9 @@
   max-width: 1140px;
   margin: 0 auto;
   align-items: center;
-  
 }
 /* start lover section */
-.lover-container{
-  
+.lover-container {
   max-width: 1140px;
   margin: 0 auto;
   margin-top: 50px;
@@ -141,25 +136,24 @@
   margin-bottom: 50px;
 }
 /* start join massage section */
-.join-message{
+.join-message {
   color: rgb(255, 255, 255);
   margin-left: 40px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
-.email{
+.email {
   max-width: 1440px;
   max-height: 50px;
   border: none;
-  padding: 20px 200px ;
-  
+  padding: 20px 200px;
 }
-.join-btn{
+.join-btn {
   max-width: 186px;
   padding: 20px 25px 20px 30px;
   cursor: pointer;
-  
+
 }
-.join-section{
+.join-section {
   background-image: url("../assets/news-letter-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -168,8 +162,57 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
+/* Footer section styles */
+.footer-container{
+  max-width: 1440px;
+  max-height:248px;
+  /* border: 2px solid red; */
+  margin: 0 auto;
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* flex-direction: column;
+   */
+   /* justify-content: flex-start; */
+   /* align-items: flex-start; */
+   /* gap: 110px; */
+display: grid;
+ 
+grid-template-columns: repeat( auto-fit , minmax(200px , 1fr) );
+gap: 30px;
+align-items: start;
+/* grid-column: auto; */
+ 
+}
+.menu-links{
+  text-decoration: none;
 
+  /* gap: 30px;
+   */
+   
+}
+.middle-menu{
+  list-style: none;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+/* a{
 
-
+   gap: 200px;
+} */
+.menu-a{
+  /* justify-content: space-between; */
+}
+.social-account{
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  
+}
+ul li a{
+  color: rgb(107, 114, 128);
+  font-size: 22px;
+}
 
