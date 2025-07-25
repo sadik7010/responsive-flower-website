@@ -119,7 +119,6 @@
   /* height: 322.94px; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
   gap: 20px;
 }
 .flower-card-container {
@@ -147,7 +146,16 @@
 .shop-container {
   position: relative;
 }
-
+/* Latest deals section added */
+.latest-deal{
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.deal-title{
+  margin-bottom: -10px;
+}
 /* start join massage section */
 .join-message {
   color: rgb(255, 255, 255);
@@ -180,40 +188,24 @@
 .footer-container {
   max-width: 1440px;
   max-height: 248px;
-  /* border: 2px solid red; */
   margin: 0 auto;
-  /* display: flex; */
-  /* justify-content: space-around; */
-  /* flex-direction: column;
-   */
-  /* justify-content: flex-start; */
-  /* align-items: flex-start; */
-  /* gap: 110px; */
   display: grid;
 
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
   align-items: start;
-  /* grid-column: auto; */
 }
 .menu-links {
   text-decoration: none;
 
-  /* gap: 30px;
-   */
 }
 .middle-menu {
   list-style: none;
   margin-top: 20px;
   margin-left: 50px;
 }
-/* a{
 
-   gap: 200px;
-} */
-.menu-a {
-  /* justify-content: space-between; */
-}
+
 .social-account {
   margin-top: 20px;
   display: flex;
@@ -224,3 +216,17 @@ ul li a {
   color: rgb(107, 114, 128);
   font-size: 22px;
 }
+.hide{
+  display: none;
+}
+/* Responsiv media quary */
+/* iphone 14 pro max */
+@media screen and (max-width:430px)  {
+          .nav-link{
+            display: none;
+            
+          }
+          
+  
+}
+
