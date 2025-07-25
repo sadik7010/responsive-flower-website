@@ -131,10 +131,23 @@
 .lover-container {
   max-width: 1140px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 200px;
   gap: 50px;
   margin-bottom: 50px;
 }
+.experience-badge img {
+  max-width: 268px;
+  max-height: 268px;
+}
+.experience-badge {
+  position: absolute;
+  top: -110px;
+  left: 350px;
+}
+.shop-container {
+  position: relative;
+}
+
 /* start join massage section */
 .join-message {
   color: rgb(255, 255, 255);
@@ -151,7 +164,6 @@
   max-width: 186px;
   padding: 20px 25px 20px 30px;
   cursor: pointer;
-
 }
 .join-section {
   background-image: url("../assets/news-letter-bg.png");
@@ -165,34 +177,32 @@
   margin-bottom: 50px;
 }
 /* Footer section styles */
-.footer-container{
+.footer-container {
   max-width: 1440px;
-  max-height:248px;
+  max-height: 248px;
   /* border: 2px solid red; */
   margin: 0 auto;
   /* display: flex; */
   /* justify-content: space-around; */
   /* flex-direction: column;
    */
-   /* justify-content: flex-start; */
-   /* align-items: flex-start; */
-   /* gap: 110px; */
-display: grid;
- 
-grid-template-columns: repeat( auto-fit , minmax(200px , 1fr) );
-gap: 30px;
-align-items: start;
-/* grid-column: auto; */
- 
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+  /* gap: 110px; */
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  align-items: start;
+  /* grid-column: auto; */
 }
-.menu-links{
+.menu-links {
   text-decoration: none;
 
   /* gap: 30px;
    */
-   
 }
-.middle-menu{
+.middle-menu {
   list-style: none;
   margin-top: 20px;
   margin-left: 50px;
@@ -201,18 +211,16 @@ align-items: start;
 
    gap: 200px;
 } */
-.menu-a{
+.menu-a {
   /* justify-content: space-between; */
 }
-.social-account{
+.social-account {
   margin-top: 20px;
   display: flex;
   gap: 20px;
   cursor: pointer;
-  
 }
-ul li a{
+ul li a {
   color: rgb(107, 114, 128);
   font-size: 22px;
 }
-
