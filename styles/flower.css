@@ -42,7 +42,6 @@
 }
 .nav-link {
   text-decoration: none;
-  /* margin-left: 10px; */
 }
 .navbar {
   justify-content: space-between;
@@ -116,7 +115,7 @@
 }
 .flower-card {
   width: 270px;
-  /* height: 322.94px; */
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -147,14 +146,79 @@
   position: relative;
 }
 /* Latest deals section added */
-.latest-deal{
+.latest-deal {
   max-width: 1440px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 60px;
 }
-.deal-title{
+.deal-title {
   margin-bottom: -10px;
+}
+.deal-banner-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1140px;
+  margin: 0 auto;
+  background-color: #f5f8ff;
+  padding: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.left-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.small-banner,
+.right-banner {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 120px;
+}
+
+.small-banner p,
+.right-banner p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.small-banner a,
+.right-banner a {
+  font-size: 14px;
+  color: white;
+  text-decoration: underline;
+  width: fit-content;
+  font-weight: normal;
+}
+
+.banner1 {
+  background-image: url("../assets/deal-bloom.png");
+  height: 120px;
+}
+
+.banner2 {
+  background-image: url("../assets/deal-ana.png");
+  height: 120px;
+}
+
+.right-banner {
+  background-image: url("../assets/deal-zabo.png");
+  flex: 2;
+  height: 290px;
 }
 /* start join massage section */
 .join-message {
@@ -187,26 +251,22 @@
 /* Footer section styles */
 .footer-container {
   max-width: 1440px;
-  max-height: 248px;
   margin: 0 auto;
   display: grid;
-  place-content: center;
-  place-items: center;
-
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  box-sizing: border-box;
   align-items: start;
 }
 .menu-links {
   text-decoration: none;
-
 }
 .middle-menu {
   list-style: none;
   margin-top: 20px;
   margin-left: 50px;
 }
-
 
 .social-account {
   margin-top: 20px;
@@ -220,7 +280,7 @@ ul li a {
 }
 
 /* Responsiv media quary */
-/* Hide Home, Shop, About  */
+/* iphone -14 pro max */
 @media (max-width: 430px) {
   .iphone-hide {
     display: none;
@@ -245,7 +305,7 @@ ul li a {
     width: 100px;
     height: auto;
   }
-  /* Banner: image on top, text below (for mobile) */
+  /* banner */
 
   .banner {
     flex-direction: column-reverse;
@@ -269,28 +329,32 @@ ul li a {
     font-size: 18px;
     width: 100%;
     text-align: left;
+    margin-left: 5px;
   }
   .flower-card {
-    grid-template-columns: repeat(2, 1fr); /* ✅ ২ কলামে ভাগ */
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     justify-content: center;
   }
-  
+
   .flower-card-container {
-    padding: 0 16px; /* মোবাইলে একটু প্যাডিং */
+    padding: 0 16px;
   }
-  
+
   .flower-card img {
     margin-left: 30px;
-    width: 100%; /* ছবির সাইজ ঠিক রাখতে */
+    width: 100%;
     height: auto;
   }
-  
-  .flower-card, h3, p, button{
-       margin-left: 30px;
+
+  .flower-card,
+  h3,
+  p,
+  button {
+    margin-left: 30px;
   }
   .btn-primary {
-    width: 100%; /* মোবাইলে বাটন ফুল-ওয়াইড হলে ভালো দেখায় */
+    width: 100%;
     padding: 12px 0;
   }
   /* lover section */
@@ -298,25 +362,31 @@ ul li a {
     flex-direction: column;
     align-items: center;
     text-align: left;
+    padding: 30px;
   }
 
   .shop-img {
-    order: 1; /* shop-img প্রথমে দেখাবে */
+    order: 1;
+  }
+  #beautiful-flower {
+    width: 95%;
   }
 
   .experience-badge {
-    display: none; /* badge hide হবে */
+    display: none;
   }
 
-  .lover-title {
+  .lover-title h3 {
     order: 2;
+    
     text-align: left;
     margin-top: 20px;
   }
 
   .plants-description {
     order: 3;
-    padding: 0 20px;
+    padding:  0 0px;
+    text-align: left;
     font-size: 18px;
   }
   /* join section */
@@ -334,47 +404,110 @@ ul li a {
   }
 
   .input-email {
+    display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 0px;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 0 10px;
   }
 
   .email {
-    padding: 12px 16px;
+    flex: 1;
+    padding: 16px;
     width: 60%;
-    max-width: 60%;
+    max-width: none;
   }
 
   .join-btn {
-    padding: 12px;
-    width: 100%;
+    padding: 15px 20px;
     white-space: nowrap;
-  }
-  /* footer container */
-  /* .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 20px;
-    max-height: unset;
-    gap: 30px;
-    text-align: center;
-  } */
-   
-
-  .middle-menu {
     margin-left: 0;
   }
 
+  /* footer section responsiv */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 0px;
+    padding: 0px;
+    position: relative;
+  }
   .footer-description {
-    font-size: 18px;
+    font-size: 14px;
+  }
+
+  .footer-logo {
+    order: 1;
+  }
+
+  .menu-a {
+    order: 2;
+  }
+
+  .menu-b {
+    order: 3;
   }
 
   .social-account {
-    justify-content: center;
+    order: 4;
+    display: flex;
+    /* justify-content: center; */
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    position: absolute;
+    bottom: -30px;
+    left: 50px;
+  }
+
+  .footer-logo img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .middle-menu {
+    margin: 20px 0;
+  }
+  .social-account img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* deal banner section */
+  .deal-banner-container {
+    flex-direction: column;
+    /* padding: 40px 0; */
+  }
+
+  .left-banner {
+    flex-direction: column;
+  }
+
+  .small-banner,
+  .right-banner {
+    width: 90%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    /* padding: 40px 20px; */
+  }
+
+  .small-banner p,
+  .right-banner p {
+    font-size: 16px;
+  }
+
+  .small-banner a,
+  .right-banner a {
+    font-size: 14px;
+  }
+
+  .right-banner {
+    height: auto;
+    margin-top: 20px;
   }
 }
-
-
-
