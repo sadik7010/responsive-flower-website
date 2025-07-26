@@ -376,9 +376,9 @@ ul li a {
     display: none;
   }
 
-  .lover-title h3 {
-    order: 2;
-    
+  .lover-title{
+    /* order: 2; */
+    margin: 0;
     text-align: left;
     margin-top: 20px;
   }
